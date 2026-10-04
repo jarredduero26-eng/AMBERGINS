@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teacher's Day, Sir Jun!</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="diary">
+
+    <!-- QUESTION PAGE -->
+    <section id="quiz" class="quiz">
+      <div class="flower flower-top">✿</div>
+      <div class="flower flower-bottom">❀</div>
+
+      <p class="small-note">A little question before your surprise ♡</p>
+
+      <h1>
+        Sir Jun, who is your<br>
+        <span>most beloved one?</span>
+      </h1>
+
+      <p class="question">Choose your answer carefully...</p>
+
+      <div id="choices" class="choices">
+        <button onclick="showAnswer('cidreck')">Cidreck</button>
+        <button onclick="showAnswer('inego')">Inego</button>
+        <button onclick="revealMessage()">Mark</button>
+        <button onclick="showAnswer('aruel')">Aruel</button>
+      </div>
+
+      <!-- ANSWER PAGE FOR THE WRONG CHOICES -->
+      <div id="answerScreen" class="answer-screen hidden">
+        <h2 id="answerText"></h2>
+        <button class="back-btn" onclick="goBack()">← BACK</button>
+      </div>
+    </section>
+
+    <!-- TEACHER'S DAY MESSAGE -->
+    <section id="letter" class="letter hidden">
+      <div class="flower flower-top">✿</div>
+      <div class="flower flower-bottom">❀</div>
+
+      <p class="small-note">These messages are from the Amber ♡</p>
+
+      <h1>
+        Happy Teacher’s Day,<br>
+        <span>Dear Sir Jun!</span>
+      </h1>
+
+      <div class="divider">✿ ───── ❀ ───── ✿</div>
+
+      <p class="greeting">To our beloved teacher,</p>
+
+      <p>
+        Full of unsaid thoughts, We just want to take this moment to thank you
+        for everything you have done for us.
+      </p>
+
+      <p>
+        Through the time we have spent with you, you have encouraged us to
+        fight for what is right, believe in ourselves, and keep going even
+        when things become difficult. Your guidance and support have meant
+        more to us than words can express.
+      </p>
+
+      <p>
+        Thank you for being there for us, for understanding us, and for
+        supporting us time and time again. You may not always hear how much
+        we appreciate you, but please know that your kindness and lessons
+        will always stay with us.
+      </p>
+
+      <p>
+        We are truly grateful to have you as our teacher. May you always
+        find happiness in the difference you make in your students’ lives.
+      </p>
+
+      <p class="closing">With love and gratitude,</p>
+      <p class="signature">Mark — si Mark ay tahimik lang ♡</p>
+
+      <div class="bottom-flower">🌷 ✿ 🌼</div>
+
+      <p class="final-note">Happy Teacher’s Day, Sir Jun! ♡</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
