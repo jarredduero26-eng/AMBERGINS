@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 15px;
+  background: #e8d9c8;
+  font-family: "Caveat", cursive;
+  color: #59463e;
+}
+
+.diary {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  padding: 55px 65px;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(
+      transparent 0px,
+      transparent 39px,
+      #d8c5ad 40px
+    ),
+    #fff8e9;
+  border: 1px solid #c9ad8c;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px #60452d33;
+}
+
+.diary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 1px;
+  background: #d9a6a0;
+}
+
+.small-note {
+  color: #a47770;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: clamp(28px, 5vw, 43px);
+  line-height: 1.35;
+  color: #76564f;
+  margin-bottom: 18px;
+}
+
+h1 span {
+  color: #b46f78;
+}
+
+.question {
+  font-size: 24px;
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+.choices {
+  display: grid;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.choices button {
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  background: #f5e2df;
+  border: 1px solid #b77d83;
+  border-radius: 10px;
+  color: #80545b;
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choices button:hover {
+  background: #eac9c8;
+  transform: translateY(-2px);
+}
+
+/* WRONG ANSWER PAGE */
+.answer-screen {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.answer-screen h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(35px, 8vw, 65px);
+  color: #b46f78;
+  margin: 30px 0;
+  overflow-wrap: anywhere;
+}
+
+.back-btn {
+  padding: 10px 30px;
+  font-family: "Caveat", cursive;
+  font-size: 22px;
+  background: #f5e2df;
+  border: 1px solid #b77d83;
+  border-radius: 25px;
+  color: #80545b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #eac9c8;
+  transform: translateY(-2px);
+}
+
+/* DIARY MESSAGE */
+.letter h1 {
+  margin-bottom: 18px;
+}
+
+.divider {
+  text-align: center;
+  color: #c18a8b;
+  margin: 20px 0 28px;
+  font-size: 18px;
+}
+
+.letter p {
+  font-size: 23px;
+  line-height: 1.55;
+  margin-bottom: 17px;
+}
+
+.letter .greeting {
+  font-weight: 700;
+}
+
+.letter .closing {
+  margin-top: 25px;
+}
+
+.letter .signature {
+  font-size: 29px;
+  font-weight: 700;
+  color: #a96e78;
+  text-align: right;
+}
+
+.bottom-flower {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 27px;
+}
+
+.letter .final-note {
+  text-align: center;
+  color: #a96e78;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+/* FLOWER DECORATIONS */
+.flower {
+  position: absolute;
+  color: #c9878b;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.flower-top {
+  top: 12px;
+  right: 25px;
+  font-size: 65px;
+  transform: rotate(15deg);
+}
+
+.flower-bottom {
+  bottom: 15px;
+  left: 10px;
+  font-size: 70px;
+  transform: rotate(-20deg);
+}
+
+/* HIDE AND SHOW */
+.hidden {
+  display: none !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .diary {
+    padding: 45px 30px 35px 48px;
+  }
+
+  .diary::before {
+    left: 25px;
+  }
+
+  .letter p {
+    font-size: 20px;
+  }
+
+  .flower-top {
+    font-size: 45px;
+  }
+
+  .flower-bottom {
+    font-size: 50px;
+  }
+}
